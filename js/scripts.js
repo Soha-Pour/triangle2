@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("form#compare").submit(function (event) {
-
+    alert("Got to beginning of form submit");
     var AA = parseInt($("#A").val());
     var BB = parseInt($("#B").val());
     var CC = parseInt($("#C").val());
@@ -16,6 +16,7 @@ $(document).ready(function() {
   }
 
   event.preventDefault();
-  console.log()
+  alert("Got to end of form sumbit");
+
   });
 });
